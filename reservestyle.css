@@ -1,0 +1,87 @@
+@font-face
+{font-family: 'calli';
+src: url('calligraffiti.ttf')}
+@font-face
+{font-family: 'open';
+src: url('OpenSans-Regular.ttf')}
+
+nav ul
+{list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+	padding-bottom: 0;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #16aff4;}
+
+nav a
+{
+    font-size: 1.5em;
+    color: #8058c1;
+    text-decoration: none;
+    font-family:'calli';
+}
+nav a:hover
+{color: #16aff4; 
+}
+
+h1
+{text-align: center;
+color: #8058c1;
+font-family: 'open';
+margin: 4% 0 ;}
+fieldset
+{
+border: 2px solid #16aff4;
+margin: 4% 15%;
+}
+form p, .confirmation
+{margin: 4% 15%}
+legend, form p, .confirmation
+{font-size: 1.4em;
+color:#8058c1;
+font-family:'open';}
+.info input, textarea
+{width: 50%;
+font-size: 1.2em;}
+.date input 
+{font-size: 1.2em;}
+fieldset label
+{font-size: 1.3em;
+color: #432f64}
+#submit
+{text-align: center;
+color: white;
+font-family: 'open';
+font-size: 1.4em;
+border: 2px solid #16aff4;
+border-radius: 3px;
+background-color: #8058c1;
+margin: 0 0 0 15%;
+}
+#submit:hover
+{background-color: white;
+color: #8058c1;}
+footer
+{background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('footer.png');
+background-size: cover;
+height: 350px;
+display: flex;
+flex-direction: row ;
+justify-content: space-between;
+
+}
+footer h3
+{padding-top: 30px;
+/*padding-left: 150px;*/
+font-size: 1.6em;
+color: #16aff4;
+}
+footer p
+{margin: ;
+color:#8058c1;
+font-size: 1.4em;
+}
+.contact
+{margin-left: 15%}
+ .hours
+ {margin-right: 15%;}

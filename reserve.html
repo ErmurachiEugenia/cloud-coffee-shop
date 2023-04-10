@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="reservestyle.css"/>
+        <title>Cloud Cafe - Reservation</title>
+    </head>
+    <body>
+<header>
+         <nav>
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menucloud.pdf">Menu</a></li>
+                <li><a href="onlineorder.html">Order ONLINE</a></li>
+                <li><a href="reserve.html">Reserve</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+       </header>
+
+       <h1>Reservation</h1>
+
+<form method="post" action="traitement.php">
+    <fieldset class="date">
+       <legend>Your visit</legend> <!-- Titre du fieldset --> 
+
+       <label for="date">Please select a date and an hour:</label><br/>
+       <input type="date" name="date" id="date" required />
+       <input type="time" name="time" id="time" min="07:30" max="15:00" required/><br/>
+
+       <small>We are open from Saturday to Thursday from 07:30 to 16:00</small><br/>
+
+       <label for="number">Please select the number of guests</label>
+       <input type="number" name="number" id="number"  min="1" max="8"required/>
+
+   </fieldset>
+
+   <fieldset class="info">
+       <legend>Your information</legend> <!-- Titre du fieldset --> 
+
+       <label for="name">Name</label><br/>
+       <input type="text" name="name" id="name" required/><br/>
+
+       <label for="email">Email address</label><br/>
+       <input type="email" name="email" id="prenom" required/><br/>
+ 
+       <label for="tel">Phone number</label><br/>
+       <input type="tel" name="tel" id="tel" required/><br/>
+
+   </fieldset>
+   <p>
+       <label for="request">Additional requests</label><br/>
+       <textarea name="request" id="request"></textarea>
+   </p>
+</form>
+
+<input type="submit" value="Submit" id="submit" />
+
+<p class="confirmation">We will send you an email confirming your reservation.</p>
+   <footer>
+         <div class="contact"><h3 id="contact">Contact</h3>
+          <p>12 rue Chisinau <br/>31400 Toulouse<br/>Tel: 07 84 99 28 05</p></div>
+          <aside class="hours"><h3>Opening hours</h3><br/>
+            <p>Monday: 7:30-16:00<br/>
+            Tuesday: 7:30-16:00<br/>
+            Wednesday: 7:30-16:00<br/>
+            Thursaday: 7:30-16:00<br/>
+            Friday: Closed<br/>
+            Saturday: 7:30-16:00<br/>
+            Sunday: 7:30-16:00</p>
+        </aside>
+        </footer>
+   </body>
+</html>
+

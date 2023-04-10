@@ -1,0 +1,89 @@
+@font-face
+{font-family: 'calli';
+src: url('calligraffiti.ttf')}
+@font-face
+{font-family: 'open';
+src: url('OpenSans-Regular.ttf')}
+
+.text
+{height:300px;}
+
+nav ul
+{list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+	padding-bottom: 18px;
+    border-bottom: 2px solid #16aff4;
+}
+
+nav a
+{
+    font-size: 1.5em;
+    color: #8058c1;
+    text-decoration: none;
+    font-family:'calli';
+}
+nav a:hover
+{color: #16aff4; 
+}
+
+h2
+{text-align: center;
+    color: #16aff4;
+}
+
+.p1
+{font-size: 1.6em;
+color:#432f64;
+font-family:'open';
+text-align: center;}
+
+footer
+{background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('footer.png');
+background-size: cover;
+height: 350px;
+display: flex;
+flex-direction: row ;
+justify-content: space-between;
+
+}
+footer h3
+{padding-top: 30px;
+/*padding-left: 150px;*/
+font-size: 1.6em;
+color: #16aff4;
+}
+footer p
+{margin: ;
+color:#8058c1;
+font-size: 1.4em;
+}
+.contact
+{margin-left: 15%}
+ .hours
+ {margin-right: 15%;}
+
+@media all and (max-width: 1024px)
+{
+    .container div
+    {
+    display: flex;
+    flex-direction: column;}
+
+    img
+    {width: 100%;}
+
+    .float1, .float2
+    {opacity: 0.95;
+    width: 100%;}
+
+    .float2
+    {margin: 0;}
+
+    p, .p1
+    {font-size: 1em;
+    text-align: justify;}
+
+    h1, h2, h3
+    {font-size: 1.5em;}
+}
